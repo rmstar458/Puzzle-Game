@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Images/logo1.jpeg">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Puzzle Game</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Interactive Puzzle</h1>
+        <p>Do you know what are soft skills ? Soft skills are a combination of personal attributes, social and communication abilities, and emotional intelligence that enable individuals to interact effectively with others, work well in teams, and accomplish their goals.</p>
+        <p>So we develop a simple theme based game. It uses the soft skills of a person to solve certain problems like : General Intelligence,Communications skills,Curiosity,Creativity etc.</p>
+        <br>
+        <br>
+        <p>Here are some rule you should keep in mind before starting the game.</p>
+        <br>
+        <ol>
+            <li>There are certain levels you need to pass the current level to go to next level.</li>
+            <li>There is no Time Limit.</li>
+            <li>You are also Provided with the hints if you got stuck somewhere. Carefully read and observe the hints as the answer hides in them.</li>
+            <li>There are certain DeadEnd in the game. It means if you proceed with the wrong answer than you will be in a DeadEnd state from where you cann't escape and the Game ends there.</li>
+            <li>Observe and Remember each and everthing you notice duirng the Game as it will be helpful at every level in the Game.</li>
+        </ol>
+        <br>
+        <p id="signin">Sign in to Proceed to the Game</p>
+        <br>
+        <div class="google">
+        <div id="g_id_onload"
+         data-client_id="725527934457-e4mcrcmbpqu30tnad6ipo3vja9q3b16h.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <h3 id="hellouser"></h3>
+        <h3 id="mailiduser"></h3>
+        <button id="signoutbtn" onclick="onSignout();">Sign Out</button>
+    </nav>
+    <div class="main">
+        <div class="question">
+            <h2 class="heading">Let's Find the Eldorado Treasure </h2>
+            <p>You are an adventurer on a quest to find the lost treasure of the ancient city of Eldorado. Legend has said that the treasure is hidden somewhere in the city, but the only clue to its location is a riddle that has been passed down through generations:</p>
+            <br>
+            <div class="words">
+            <p>"From the great city gate, take the western road,</p>
+            <p>Past the old stone fountain and the farmer's abode.</p>
+            <p>Turn right at the statue of the warrior bold,</p>
+            <p>And follow the path where the trees are old.</p>
+            <p>Look for the sign of the serpent's head,</p>
+            <p>And there the treasure shall be found, it is said."</p>
+            </div>
+            <br>
+            <p>So as you follow the path, at every point you have to find some hidden code to proceed to the next level. So try your best to break all the puzzles and find the lost treasure of Eldorado. Make Sure you read the statement carefully because once started there is no coming back.</p>
+            <button class="btn" onclick="myfunc();">START</button>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Choose the Right Gate Number </h1>
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>So you start your journey, after reaching the end of the western road there comes three gate where each gate has a number written on them as 121, 125, 129. Only one of the three gates is right where as other two may mislead you. There is also a hint given to you for the right gate as :</p>
+                <p>5 Gives 32 </p>
+                <p>7 Gives 62</p>
+                <p>9 Gives 90</p>
+                <p>In the same way 11 gives the right gate number.</p>
+                <br>
+                <br>
+                <h2>Which Gate will you choose 121,125,129? </h2>
+                
+                <div class="bottom">
+                <label for="level1"><h3>Your Answer : </h3></label>
+                <select name="level1" class="level1">
+                    <option selected disabled>Choose here</option>
+                    <option value="121">121</option>
+                    <option value="125">125</option>
+                    <option value="129">129</option>
+                  </select>
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS >></button>
+            </div>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Encode The THANKS...</h1>
+                
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>So after choosing the right gate you continue your journey to find the treasure. But after walking some distance there comes a security gate where you needs to enter a security code to open the gate. The security code is simply THANKS but the twist is that you have to enter it in the villages language. Can you decode the THANKS in thier language ? </p>
+                <br>
+                <a href="https://www.instagram.com/p/CrYo5mWsF2g/?igshid=YmMyMTA2M2Y=" target="_blank">Security Gate Image</a>
+                <br>
+                
+                <div class="bottom">
+                    <label for="level1"><h3>Your Answer : </h3></label>
+                <input type="text" class="level1" placeholder="Your answer">
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS</button>
+            </div>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Find The Hidden Words :)</h1>
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>So after reaching near warrior bold, there is an image lying near the statue. In that image there lies 6 hidden words of english which you need to find out because those words indicates the right direction in the map. Only 5 out of 6 words will solve your problem.</p>
+                <br>
+                <a href="final.html" target="_blank">Click here to see the image </a>
+                <br>
+                <br>
+                <h2>The Words are (in Uppercase seprated by commas and in dictionary order) : </h2>
+                
+                <div class="bottom">
+                <label for="level1"><h3>Your Answer : </h3></label>
+                <input type="text" class="level1" placeholder="Your answer">
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS</button>
+            </div>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Which Path will you choose ? </h1>
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>So following the path of your journey, you passed the old trees. On carefully observing the trees you find that there is a poem written on bark of the trees. As the poem was written in the native language, you asked a villager about the poem and he told you the poem in English. You listen the poem and follow your journey. After a while there comes a crossroad point where each road leads to different path. On the starting of each road a sign board is there which has a body parts drawn on them.</p>
+                <br>
+                <a href="https://youtu.be/7ktOtms0JDs" target="_blank">Listen to the poem</a>
+                <br>
+                <p>The 1 road has a sign of Leg.</p>
+                <p>The 2 road has a sign of Eye.</p>
+                <p>The 3 road has a sign of Head.</p>
+                <p>The 4 road has a sign of Hand.</p>
+                <br>
+                <br>
+                <br>
+                <h2>Based on the knowledge you collected till now, which road will you choose 1,2,3 or 4? </h2>
+                <br>
+                <div class="bottom">
+                <label for="level1"><h3>Your Answer : </h3></label>
+                <select name="level1" class="level1">
+                    <option selected disabled>Choose here</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS</button>
+            </div>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Hurry Up, Find the Spot</h1>
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>You finally entered the cave where the treasure of the Eldorado lies. As the cave is deep indide the earth , there is shortage of oxygen so you are supposed to find the treasure as quickly as possible. Given the Visual representation of the cave. Guess where the treasure box is hidden ?</p>
+                <br>
+                <a href="cave.html">Click here to see Cave</a>
+                <br>
+                <br>
+                <h2>Your selected option(1,2,3,4) is : </h2>
+                
+                <div class="bottom">
+                <label for="level1"><h3>Your Answer : </h3></label>
+                <select name="level1" class="level1">
+                    <option selected disabled>Choose here</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS</button>
+            </div>
+        </div>
+        <div class="question">
+            <div class="words">
+                <h1 class="level">Crack The Final Code : </h1>
+                <div class="tooltip">Hint
+                    <span class="tooltiptext">here is hint</span>
+                </div>
+                <p>You finally found the treasure box. But the box is locked with a lock whose key is a 3 digit number and that number was king's faviourite's number. The king never tell anyone about this number but he tells hint related to the number. Use these hints to crack this number.</p>
+                <br>
+                <p>Hint 1 : The product of 3 number is 36</p>
+                <p>Hint 2: The largest of the 3 number is unique.</p>
+                <br>
+                <h2>The number is : </h2>
+                
+                <div class="bottom">
+                <label for="level1"><h3>Your Answer : </h3></label>
+                <input type="text" class="level1" placeholder="Your answer">
+                </div>
+                <button class="check" type="submit" onclick="check();">CHECK</button>
+                <button class="btn1" type="submit" onclick="myfunc();">MOVE FORWARDS</button>
+            </div>
+        </div>
+        <div class="question">
+            <canvas id="my-canvas"></canvas>
+            <div class="center_div">
+                <h1 style="text-align: center;">Congratulations......</h1>
+                <br>
+                <p>You Find the Treasure of the Eldorado</p>
+                <img id="finalimg" src="Images/treasure.png">
+                
+            </div>
+        </div>
+    </div>
+    <div id="dead">
+        <h1>OOOPS...</h1>
+    </div>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

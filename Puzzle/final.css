@@ -1,0 +1,16 @@
+.main{
+    height:80vh;
+    width: 90vw;
+}
+#image{
+    margin:0% 10%;
+    height:auto;
+    width: 80%;
+}
+@media screen and (max-width: 600px){
+    #image{
+        margin:0% 0%;  
+        width: 100%;
+
+    }
+}
